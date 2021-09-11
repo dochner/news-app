@@ -1,0 +1,129 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "default",
+      "version": "0.0.0",
+      "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "serve": "vite preview"
+      },
+      "dependencies": {
+        "vue": "^3.2.6"
+      },
+      "devDependencies": {
+        "@vitejs/plugin-vue": "^1.6.0",
+        "@vue/compiler-sfc": "^3.2.6",
+        "vite": "^2.5.2"
+      }
+    },
+    "prefix": "/Users/douglas/Projects/default"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/Users/douglas/.pnpm-store/v3",
+    "virtualStoreDir": "/Users/douglas/Projects/default/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/Users/douglas/Projects/default",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/vue/3.2.9",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vue",
+      "rawSpec": "^3.2.6"
+    }
+  },
+  "5 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/vue/3.2.9",
+    "requester": "/Users/douglas/Projects/default",
+    "status": "resolved"
+  },
+  "6 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/vue/3.2.9",
+    "size": 644050,
+    "status": "started"
+  },
+  "7 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@vue/compiler-sfc/3.2.9",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@vue/compiler-sfc",
+      "rawSpec": "^3.2.6"
+    }
+  },
+  "8 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@vue/compiler-sfc/3.2.9",
+    "requester": "/Users/douglas/Projects/default",
+    "status": "resolved"
+  },
+  "9 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/vue/3.2.9",
+    "requester": "/Users/douglas/Projects/default",
+    "status": "fetched"
+  },
+  "10 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/vite-plugin-md/0.11.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vite-plugin-md",
+      "rawSpec": "latest"
+    }
+  },
+  "11 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/vite-plugin-md/0.11.0",
+    "requester": "/Users/douglas/Projects/default",
+    "status": "resolved"
+  },
+  "12 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/unplugin-vue-components/0.14.12",
+    "wanted": {
+      "dependentId": ".",
+      "name": "unplugin-vue-components",
+      "rawSpec": "latest"
+    }
+  },
+  "13 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/unplugin-vue-components/0.14.12",
+    "requester": "/Users/douglas/Projects/default",
+    "status": "resolved"
+  },
+  "14 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/unplugin-icons/0.7.5",
+    "wanted": {
+      "dependentId": ".",
+      "name": "unplugin-icons",
+      "rawSpec": "latest"
+    }
+  },
+  "15 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/unplugin-icons/0.7.5",
+    "requester": "/Users/douglas/Projects/default",
+    "status": "resolved"
+  },
+  "16 error pnpm": {
+    "code": "ERR_PNPM_FETCH_404",
+    "hint": "vite-plugin-layouts is not in the npm registry, or you have no permission to fetch it.\n\nNo authorization header was set for the request.",
+    "request": {
+      "url": "https://registry.npmjs.org/vite-plugin-layouts"
+    },
+    "response": {
+      "size": 0,
+      "timeout": 60000
+    },
+    "pkgName": "vite-plugin-layouts",
+    "pkgsStack": [],
+    "err": {
+      "name": "Error",
+      "message": "GET https://registry.npmjs.org/vite-plugin-layouts: Not Found - 404",
+      "code": "ERR_PNPM_FETCH_404",
+      "stack": "Error: GET https://registry.npmjs.org/vite-plugin-layouts: Not Found - 404\n    at RetryOperation._fn (/Users/douglas/.nvm/versions/node/v14.17.5/lib/node_modules/pnpm/dist/pnpm.cjs:84496:18)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vue3-vite-template</title>
+  <link type="image/svg+xml" href="/favicon.svg" rel="icon">
+  <link href="/pwa-192x192.png" rel="apple-touch-icon">
+  <meta name="msapplication-TileColor" content="#96D0FF">
+  <meta name="theme-color" content="#96D0FF">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    (function() {
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+      const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
+      if (setting === 'dark' || (prefersDark && setting !== 'light'))
+        document.documentElement.classList.toggle('dark', true)
+    })()
+  </script>
+  <script src="/src/main.js" type="module"></script>
+</body>
+</html>
